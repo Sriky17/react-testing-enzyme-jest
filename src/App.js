@@ -20,14 +20,16 @@ function App() {
   return (
     // <div style={{ backgroundColor: "red", height: "400px" }}>
     // <Container className={conclass}>
-    <Container
-      data-test="containerComponent"
-      className={classes.backgroundcolor}
-    >
-      <div>
-        <Header />
-      </div>
-    </Container>
+    <div>
+      <Container
+        data-test="containerComponent"
+        className={classes.backgroundcolor}
+      >
+        <div>
+          <Header />
+        </div>
+      </Container>
+    </div>
   );
 }
 

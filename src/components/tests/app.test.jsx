@@ -1,8 +1,8 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Header from "../components/Header";
-import App from "../App";
-import { findByTestAttr } from "../../Utils";
+import Header from "../Header";
+import App from "../../App";
+import { findByTestAttr } from "../../../Utils";
 
 const setUp = (props = {}) => {
   const component = shallow(<App {...props} />);
