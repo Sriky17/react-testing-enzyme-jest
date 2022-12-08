@@ -4,13 +4,16 @@ import React from "react";
 import Header from "./components/Header";
 // import "../src/app.css";
 import { makeStyles } from "@material-ui/core";
+import Headline from "./components/Headline";
 // import classNames from "classnames";
 
 const useStyles = makeStyles((theme) => ({
   backgroundcolor: {
     background: "#4dabf5",
-    height: 575,
-    width: 1255,
+  },
+
+  mmoveHeadline: {
+    marginTop: "65px",
   },
 }));
 
@@ -25,9 +28,11 @@ function App() {
         data-test="containerComponent"
         className={classes.backgroundcolor}
       >
-        <div>
-          <Header />
-        </div>
+        <Header />
+      </Container>
+
+      <Container className={classes.mmoveHeadline}>
+        <Headline header="Posts" desc="Click the button to render the posts" />
       </Container>
     </div>
   );
